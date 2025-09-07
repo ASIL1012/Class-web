@@ -1,0 +1,50 @@
+ :root{
+      --bg: #0b1020;
+      --card: #111735;
+      --accent: #7c9aff;
+      --accent-2: #6affe0;
+      --text: #eaf0ff;
+      --sub: #a7b3d1;
+      --danger: #ff6b6b;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 22px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% 10%, #121a3a 0%, var(--bg) 60%) fixed;
+      color:var(--text);
+      display:grid;
+      place-items:center;
+    }
+
+nav{
+
+  margin-top: 25px;
+  background: var(--card);
+  padding: 14px 2px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow: var(--shadow);
+  border-radius:var(--radius) ;
+}
+
+nav ul{
+  margin-right: 25px;
+  list-style:none;
+  display:flex;
+  gap:10px;
+}
+nav a{
+  
+  text-decoration:none;
+  color:var(--text);
+  font-weight:500;
+  transition:color .2s;
+}
+nav a:hover{
+  color:var(--accent-2);
+}
