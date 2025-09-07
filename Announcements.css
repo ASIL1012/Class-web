@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    list-style-type: none;
+    position: sticky;
+    margin: 0px;
+    background-color: #f4f4f4;
+    
+    
+
+}
+.navd a {
+    background-color: white;
+    margin: 20px;
+    border-radius: 9px;
+    padding: 10px;
+    
+}
+
+li{
+    display: inline-block;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+a:hover{
+    color: rgb(144, 144, 144);
+    transition: 0.1s;
+}
+
+
+.home{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.ann[aria-current="page"]{
+    text-decoration: underline;
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.sdl{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.mem{
+        text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.an{ 
+    background: #333;
+    color: white;
+    padding: 20px;}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #ddd;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+
+
+
+.student2{
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+}
+img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+}

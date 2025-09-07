@@ -1,0 +1,116 @@
+ :root{
+      --bg: #0b1020;
+      --card: #111735;
+      --accent: #7c9aff;
+      --accent-2: #6affe0;
+      --text: #eaf0ff;
+      --sub: #a7b3d1;
+      --danger: #ff6b6b;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 22px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% 10%, #121a3a 0%, var(--bg) 60%) fixed;
+      color:var(--text);
+      display:grid;
+      place-items:center;
+    }
+
+nav{
+
+  margin-top: 25px;
+  background: var(--card);
+  padding: 14px 2px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow: var(--shadow);
+  border-radius:var(--radius) ;
+}
+
+nav ul{
+  margin-right: 25px;
+  list-style:none;
+  display:flex;
+  gap:10px;
+}
+nav a{
+  
+  text-decoration:none;
+  color:var(--text);
+  font-weight:500;
+  transition:color .2s;
+}
+nav a:hover{
+  color:var(--accent-2);
+}
+
+h3{
+  text-align: center;
+  color:var(----accent);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: -605px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:var(--shadow);
+  backdrop-filter: blur(8px);
+  padding: 19px;
+  width: 100%;
+}
+
+main{
+  padding:80px 20px;
+  max-width:100%;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:20px;
+}
+
+
+.student{
+  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:20px;
+  text-align:center;
+  backdrop-filter: blur(8px);
+}
+.student img{
+  width:90px;height:90px;border-radius:50%;
+  object-fit:cover;margin-bottom:12px;
+  border:2px solid rgba(255,255,255,.2);
+}
+.student h3{
+  margin:0;
+  font-size:18px;
+  font-weight:700
+}
+.student p{
+  margin:6px 0 0;
+  font-size:14px;
+  color:var(--sub)}
+
+.nl[aria-current="page"]{
+  text-decoration: underline var(--text) 3px ;
+  text-underline-offset: 10px;
+}
+
+@media (max-width: 1168px) {
+  footer{
+    bottom: -4535px;
+  }
+}
