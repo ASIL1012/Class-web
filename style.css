@@ -27,6 +27,10 @@ header {
     padding: 20px;
 }
 
+list-style-type{
+    text-decoration:none;
+}
+
 
 section {
     padding: 20px;
