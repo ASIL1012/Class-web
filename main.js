@@ -8,7 +8,7 @@ status: document.getElementById('status')
 };
 
 
-const targetDate = new Date('2026-01-28T00:00:00');
+const targetDate = new Date('2026-02-05T00:00:00');
 let timerId = null;
 
 
@@ -69,5 +69,6 @@ return parts.slice(0,3).join(', ');
 // start countdown immediately
 timerId = setInterval(tick, 1000);
 tick();
+
 
 
