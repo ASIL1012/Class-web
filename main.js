@@ -8,7 +8,7 @@ status: document.getElementById('status')
 };
 
 
-const targetDate = new Date('2026-05-28T00:00:00');
+const targetDate = new Date('2026-01-28T00:00:00');
 let timerId = null;
 
 
@@ -70,3 +70,4 @@ return parts.slice(0,3).join(', ');
 timerId = setInterval(tick, 1000);
 
 tick();
+
