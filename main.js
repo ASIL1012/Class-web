@@ -68,6 +68,6 @@ return parts.slice(0,3).join(', ');
 
 // start countdown immediately
 timerId = setInterval(tick, 1000);
-
 tick();
+
 
